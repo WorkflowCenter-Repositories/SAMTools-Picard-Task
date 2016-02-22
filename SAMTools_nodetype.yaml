@@ -1,0 +1,50 @@
+node_types:
+# general block
+  workflow_service:
+    derived_from: cloudify.nodes.ApplicationModule
+    properties:
+      block_description:
+        description: Description of the block function
+        type: string
+      block_name:
+        type: string
+      block_category:
+        type: string
+      service_type:
+        type: string
+
+  SAMtools-index:
+    derived_from: workflow_service
+    properties:
+      #input
+      input-BAM-files:
+        type: string
+        default: file-wrapper
+      #output
+      index-BAI-files:
+        type: string
+        default: file-wrapper
+
+#general lib description
+  spec_library:
+    derived_from: cloudify.nodes.ApplicationModule
+    properties:
+      lib_name:
+        type: string
+        default: ' '
+      version:
+        type: string
+        default: ''
+      OS-type:
+        type: string
+        default: Linux
+      lib_path:
+        type: string
+        default: ' '
+
+  SAMTools-lib:
+    derived_from: spec_library
+    properties:
+      lib_URL: 
+        type: string
+
