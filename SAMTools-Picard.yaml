@@ -145,14 +145,14 @@ node_templates:
       - type: cloudify.relationships.depends_on
         target: SAMTools-Lib
       - type: block_link
-        target: Picard-Add
+        target: importFile
         source_interfaces:
           cloudify.interfaces.relationship_lifecycle:
             preconfigure:
               implementation: scripts/datacopy.sh
               inputs:
                 process:
-                  args: [Picard-Add/output-SAM_BAM-files, SAMTools/input-BAM-files, SAMTools-Picard, SAMTools-container]        
+                  args: [importFile/output-1, SAMTools/input-BAM-files, SAMTools-Picard, SAMTools-container]        
     interfaces:
       cloudify.interfaces.lifecycle:
         start:
