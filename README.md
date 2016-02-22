@@ -1,5 +1,5 @@
 # SAMTools-Picard-Task
-##Repository for SAMTolls-index Task of Sequence Cleaning Workflow
+##Repository for SAMTools-index Task of Sequence Cleaning Workflow
 
 ###How to deploy the task:  
 - Clone this repository to your machine   
