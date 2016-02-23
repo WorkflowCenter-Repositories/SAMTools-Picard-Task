@@ -1,11 +1,11 @@
-# Blueprint to deploy Meha-NJ task
+# Blueprint to deploy SAMTools-index task
 
 tosca_definitions_version: cloudify_dsl_1_0
 
 imports:
   - http://www.getcloudify.org/spec/cloudify/3.1/types.yaml
   - https://raw.githubusercontent.com/rawaqasha/e-sc-cloudify/master/esc_nodetypes.yaml
-  #- https://github.com/WorkflowCenter-Repositories/SAMTools-Picard-Task/raw/master/SAMTools-container_nodetype.yaml
+  #- https://github.com/WorkflowCenter-Repositories/SAMTools-Picard-Task/raw/master/SAMTools_nodetype.yaml
 
 inputs:
 
@@ -17,7 +17,7 @@ inputs:
   input-file:
       description: >
         input file for importFile1
-      default: aligned-sequences
+      default: output-SAM_BAM-files.bai
 
   docker-image: 
       description: > 
