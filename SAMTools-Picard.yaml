@@ -145,7 +145,7 @@ node_templates:
       - type: cloudify.relationships.depends_on
         target: SAMTools-Lib
       - type: block_link
-        target: Picard-Add
+        target: importFile
         source_interfaces:
           cloudify.interfaces.relationship_lifecycle:
             preconfigure:

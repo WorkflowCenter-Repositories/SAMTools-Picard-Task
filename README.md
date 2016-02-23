@@ -1,5 +1,5 @@
-# Mega-NJ-Task
-##Repository for Mega Neighbor Joining Task 
+# SAMTools-Picard-Task
+##Repository for SAMTools-index Task of Sequence Cleaning Workflow
 
 ###How to deploy the task:  
 - Clone this repository to your machine   
@@ -10,17 +10,16 @@
 
 ###Information:  
 
-  Task-Name: Mega NJ  
+  Task-Name: SAMTools-index  
   version: 1.0  
   Description: The task implements neighbour joining method. It was designed in the e-Science Central system.  
-  instruction-file: MegaNJ-instruction  
-  task-dependencies: {java1.7, Wine1.6+, Mega-CC lib}   
+  task-dependencies: {java1.7, SAMTools-lib}   
   
 Blueprint:  
   
-  blueprint-name: Mega-NJ.yaml  
-  Docker-images: rawa/mega-cc  
-  sizes: 736MB  
+  blueprint-name: SAMTools-Picard.yaml  
+  Docker-images: dtdwd/samtools1  
+  sizes: 228 MB  
   OS-types: ubuntu14.4   
   
 Input:  
@@ -31,7 +30,7 @@ Input:
   
 Outputs:  
   
-  output-folder: '~/Mega-NJ'  
+  output-folder: '~/SAMTools-Picard'  
   output-file(s): {}  
   description:  
   types: {}  
