@@ -19,7 +19,7 @@ Blueprint:
   
   blueprint-name: SAMTools-Picard.yaml  
   Docker-images: dtdwd/samtools1  
-  sizes: 348.6 MB  
+  sizes: 228 MB  
   OS-types: ubuntu14.4   
   
 Input:  
