@@ -1,11 +1,11 @@
-# SAMTools-Picard-Task
+# SAMTools-Task
 ##Repository for SAMTools-index Task of Sequence Cleaning Workflow
 
 ###How to deploy the task:  
 - Clone this repository to your machine   
 - if you want deploy the task with your own data then  
-  - in Mega-NJ-Task/input folder put your file, edit Mega-NJ-Task/input.yaml file and change 'input-file' to your file name  
-  - in a terminal run . ./task-deploy.sh within Mega-NJ-Task folder  
+  - in SAMTools-Task/input folder put your file, edit SAMTools-Task/input.yaml file and change 'input-file' to your file name  
+  - in a terminal run . ./task-deploy.sh within SAMTools-Task folder  
 - if you are happy to deploy the task with the sample input file in input folder just run task-deploy.sh as above  
 
 ###Information:  
@@ -30,7 +30,7 @@ Input:
   
 Outputs:  
   
-  output-folder: '~/SAMTools-Picard'  
+  output-folder: '~/SAMTools-Task'  
   output-file(s): {}  
   description:  
   types: {}  
